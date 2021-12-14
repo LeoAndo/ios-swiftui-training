@@ -1,7 +1,7 @@
 # ios-animation-samples
 sample for iOS animation
 
-# PageTabViewSample
+# PageTabView Sample
 
 | iPhone 12 Pro |
 |:---|
