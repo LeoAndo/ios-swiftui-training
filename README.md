@@ -1,5 +1,4 @@
-# ios-animation-samples
-sample for iOS animation
+# ios-swiftui-training
 
 # development env
 
