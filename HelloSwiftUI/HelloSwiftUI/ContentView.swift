@@ -32,16 +32,16 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-//        ContentView()
-//            .previewDevice("iPad Pro (11-inch) (3rd generation)")
-        // 複数デバイス指定の場合は、Groupで囲む
+        //        ContentView()
+        //            .previewDevice("iPad Pro (11-inch) (3rd generation)")
+        //複数デバイス指定の場合は、Groupで囲む
         Group {
             ContentView()
                 .previewDevice("iPhone 12 mini")
-
+            
             ContentView()
                 .previewDevice("iPad Pro (11-inch) (3rd generation)")
         }
-
+        
     }
 }
