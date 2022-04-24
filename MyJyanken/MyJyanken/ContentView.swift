@@ -31,7 +31,11 @@ struct ContentView: View {
                 Text("パー")
             }
             Button(action: {
-                let randomNumber = Int.random(in: 1...3)
+                var randomNumber = 0
+                repeat {
+                    randomNumber = Int.random(in: 1...3)
+                } while answerNumber == randomNumber
+                
                 print("クリックされました: \(randomNumber)")
                 answerNumber = randomNumber
             }) {
