@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image("gu").resizable()
+        Image("gu")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
     }
 }
 
