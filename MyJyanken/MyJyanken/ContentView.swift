@@ -31,8 +31,9 @@ struct ContentView: View {
                 Text("パー")
             }
             Button(action: {
-                print("クリックされました")
-                answerNumber = answerNumber + 1
+                let randomNumber = Int.random(in: 1...3)
+                print("クリックされました: \(randomNumber)")
+                answerNumber = randomNumber
             }) {
                 Text("ジャンケンをする")
             }
