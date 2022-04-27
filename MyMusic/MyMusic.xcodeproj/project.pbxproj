@@ -12,6 +12,7 @@
 		AA29B16E281969E700E3322F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA29B16D281969E700E3322F /* Assets.xcassets */; };
 		AA29B171281969E700E3322F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA29B170281969E700E3322F /* Preview Assets.xcassets */; };
 		AA29B17828196FB700E3322F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA29B17728196FB700E3322F /* SoundPlayer.swift */; };
+		AA29B17A281977E000E3322F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA29B179281977E000E3322F /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AA29B16D281969E700E3322F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA29B170281969E700E3322F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA29B17728196FB700E3322F /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		AA29B179281977E000E3322F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				AA29B169281969E400E3322F /* MyMusicApp.swift */,
 				AA29B16B281969E400E3322F /* ContentView.swift */,
+				AA29B179281977E000E3322F /* BackgroundView.swift */,
 				AA29B17728196FB700E3322F /* SoundPlayer.swift */,
 				AA29B16D281969E700E3322F /* Assets.xcassets */,
 				AA29B16F281969E700E3322F /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				AA29B16C281969E400E3322F /* ContentView.swift in Sources */,
 				AA29B17828196FB700E3322F /* SoundPlayer.swift in Sources */,
+				AA29B17A281977E000E3322F /* BackgroundView.swift in Sources */,
 				AA29B16A281969E400E3322F /* MyMusicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
