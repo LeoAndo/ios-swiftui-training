@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let soundPlayer = SoundPlayer()
     var body: some View {
         ZStack {
             Image("background")
@@ -16,12 +17,12 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fill)
             HStack {
                 Button(action: {
-                    
+                    soundPlayer.play(fileName: "cymbalSound")
                 }){
                     Image("cymbal")
                 }
                 Button(action: {
-                    
+                    soundPlayer.play(fileName: "guitarSound")
                 }){
                     Image("guitar")
                 }
