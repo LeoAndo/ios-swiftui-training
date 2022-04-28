@@ -17,14 +17,23 @@ struct MapView: UIViewRepresentable {
         print(searchKey)
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(searchKey, completionHandler: { (placemarks, error) in
-            print("placemarks: \(placemarks?.count)")
-            print("error: \(error?.localizedDescription)")
+            print("placemarks: \(String(describing: placemarks))")
+            print("error: \(String(describing: error?.localizedDescription))")
             // リクエストの結果が存在すれば、1件目の位置情報から取り出す
             if let unwrapPlacemarks = placemarks,
                let firstPlacemark = unwrapPlacemarks.first,
                let location = firstPlacemark.location {
                 let targetCoordinate = location.coordinate
                 print("targetCoordinate: \(targetCoordinate)")
+                
+                // pinの生成
+                let pin = MKPointAnnotation()
+                pin.coordinate = targetCoordinate
+                pin.title = searchKey
+                uiView.addAnnotation(pin)
+                // 緯度経度を中心に半径200mの範囲を表示
+                uiView.region = MKCoordinateRegion(
+                    center: targetCoordinate, latitudinalMeters: 200.0, longitudinalMeters: 200.0)
             }
             
         })
