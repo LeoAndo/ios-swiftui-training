@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Text("タイマー画面")
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: SettingView()){
+                        Text("秒数設定")
+                    }
+                }
+            }
+        }
+        .navigationViewStyle(.stack) // iPadがiPhoneと同じ見た目になるように設定
     }
 }
 

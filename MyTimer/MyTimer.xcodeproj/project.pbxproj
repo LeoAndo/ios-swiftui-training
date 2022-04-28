@@ -11,6 +11,7 @@
 		AAAB54FA281AD67500C32478 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB54F9281AD67500C32478 /* ContentView.swift */; };
 		AAAB54FC281AD67600C32478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAB54FB281AD67600C32478 /* Assets.xcassets */; };
 		AAAB54FF281AD67600C32478 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAB54FE281AD67600C32478 /* Preview Assets.xcassets */; };
+		AAAB5506281AD6E500C32478 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB5505281AD6E500C32478 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AAAB54F9281AD67500C32478 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAAB54FB281AD67600C32478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAB54FE281AD67600C32478 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAAB5505281AD6E500C32478 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AAAB54F7281AD67500C32478 /* MyTimerApp.swift */,
 				AAAB54F9281AD67500C32478 /* ContentView.swift */,
+				AAAB5505281AD6E500C32478 /* SettingView.swift */,
 				AAAB54FB281AD67600C32478 /* Assets.xcassets */,
 				AAAB54FD281AD67600C32478 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAB5506281AD6E500C32478 /* SettingView.swift in Sources */,
 				AAAB54FA281AD67500C32478 /* ContentView.swift in Sources */,
 				AAAB54F8281AD67500C32478 /* MyTimerApp.swift in Sources */,
 			);
