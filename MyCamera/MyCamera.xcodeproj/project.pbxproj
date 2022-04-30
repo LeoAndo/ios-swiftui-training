@@ -13,6 +13,7 @@
 		AA9E8B44281CF87A007A56FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9E8B43281CF87A007A56FB /* Preview Assets.xcassets */; };
 		AA9E8B4B281CF899007A56FB /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E8B4A281CF899007A56FB /* ImagePickerView.swift */; };
 		AA9E8B4F281D2C35007A56FB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E8B4E281D2C35007A56FB /* ActivityView.swift */; };
+		AA9E8B51281D3EEA007A56FB /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E8B50281D3EEA007A56FB /* PHPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AA9E8B43281CF87A007A56FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA9E8B4A281CF899007A56FB /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		AA9E8B4E281D2C35007A56FB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		AA9E8B50281D3EEA007A56FB /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				AA9E8B3C281CF878007A56FB /* MyCameraApp.swift */,
 				AA9E8B3E281CF878007A56FB /* ContentView.swift */,
 				AA9E8B4A281CF899007A56FB /* ImagePickerView.swift */,
+				AA9E8B50281D3EEA007A56FB /* PHPickerView.swift */,
 				AA9E8B4E281D2C35007A56FB /* ActivityView.swift */,
 				AA9E8B40281CF87A007A56FB /* Assets.xcassets */,
 				AA9E8B42281CF87A007A56FB /* Preview Content */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9E8B51281D3EEA007A56FB /* PHPickerView.swift in Sources */,
 				AA9E8B3F281CF878007A56FB /* ContentView.swift in Sources */,
 				AA9E8B4F281D2C35007A56FB /* ActivityView.swift in Sources */,
 				AA9E8B4B281CF899007A56FB /* ImagePickerView.swift in Sources */,
