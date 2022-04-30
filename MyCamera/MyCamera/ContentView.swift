@@ -8,42 +8,70 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var captureImage: UIImage? = nil
     @State var isShowSheet = false
-    @State var captureImage: UIImage? =  nil
-    // シェア画面の（sheet）の開閉状態を管理
     @State var isShowActivity = false
+    @State var isPhotolibrary = false
+    @State var isShowAction = false
+    
     var body: some View {
         VStack {
             Spacer()
+            // 撮影した写真があるとき
             if let unwrapCaptureImage = captureImage {
                 Image(uiImage: unwrapCaptureImage)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fit) // アスペクト比（縦横比）を維持して画面内に
             }
             Spacer()
             Button(action: {
-                if UIImagePickerController.isSourceTypeAvailable(.camera){
-                    print("カメラは利用できる")
-                    isShowSheet = true
-                } else {
-                    print("カメラは利用できない")
-                }
+                isShowAction = true
             }) {
                 Text("カメラを起動する")
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)
-                    .multilineTextAlignment(.center) // 文字列をセンタリング
+                    .multilineTextAlignment(.center) // 文字列をセンタリング指定
                     .background(.blue)
-                    .foregroundColor(.white)
+                    .foregroundColor(.white)  // 文字色を白色に指定
             }
             .padding()
-            .sheet(isPresented: $isShowSheet){
-                ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+            .sheet(isPresented: $isShowSheet) {
+                if isPhotolibrary {
+                    // PHPickerViewController（フォトライブラリー）を表示
+                    PHPickerView(
+                        isShowSheet: $isShowSheet,
+                        captureImage: $captureImage)
+                } else {
+                    // UIImagePickerController（写真撮影）を表示
+                    ImagePickerView(
+                        isShowSheet: $isShowSheet,
+                        captureImage: $captureImage)
+                }
+                
+            }
+            .actionSheet(isPresented: $isShowAction) {
+                ActionSheet(title: Text("確認"),
+                            message: Text("選択してください"),
+                            buttons: [
+                                .default(Text("カメラ"), action: {
+                                    isPhotolibrary = false
+                                    if UIImagePickerController.isSourceTypeAvailable(.camera){
+                                        print("カメラは利用できます")
+                                        isShowSheet = true
+                                    } else {
+                                        print("カメラは利用できません")
+                                    }
+                                }),
+                                .default(Text("フォトライブラリー"), action: {
+                                    isPhotolibrary = true
+                                    isShowSheet = true
+                                }),
+                                .cancel(),
+                            ])
             }
             
             // 「SNSに投稿する」ボタン
             Button(action: {
-                // ボタンをタップしたときのアクション
                 // 撮影した写真があるときだけ
                 // UIActivityViewController（シェア機能）を表示
                 if let _ = captureImage {
@@ -51,26 +79,19 @@ struct ContentView: View {
                 }
             }) {
                 Text("SNSに投稿する")
-                    // 横幅いっぱい
                     .frame(maxWidth: .infinity)
-                    // 高さ50ポイント指定
                     .frame(height: 50)
-                    // 文字列をセンタリング指定
                     .multilineTextAlignment(.center)
-                    // 背景を青色に指定
                     .background(Color.blue)
-                    // 文字色を白色に指定
                     .foregroundColor(Color.white)
-            } // 「SNSに投稿する」ボタンここまで
-            // 上下左右に余白を追加
+            }
             .padding()
-            // sheetを表示
-            // isPresentedで指定した状態変数がtrueのとき実行
             .sheet(isPresented: $isShowActivity) {
                 // UIActivityViewController（シェア機能）を表示
                 ActivityView(shareItems: [captureImage!])
             }
         }
+        
     }
 }
 
@@ -79,3 +100,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
