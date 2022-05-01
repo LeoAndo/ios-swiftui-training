@@ -9,6 +9,13 @@ import UIKit
 
 class QuizViewController: UIViewController {
     var csvArray: [String] = []
+    @IBOutlet weak var quizNumberLabel: UILabel!
+    @IBOutlet weak var quizTextView: UITextView!
+    @IBOutlet weak var answerButton1: UIButton!
+    @IBOutlet weak var answerButton2: UIButton!
+    @IBOutlet weak var answerButton3: UIButton!
+    @IBOutlet weak var answerButton4: UIButton!
+    
     
     //    画面表示時に呼ばれる
     override func viewDidLoad() {
