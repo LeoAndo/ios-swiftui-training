@@ -159,6 +159,9 @@
                         <viewLayoutGuide key="safeArea" id="C8X-WL-Nf9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="scorelabel" destination="YZc-mY-JK2" id="quj-p1-fJO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdi-iL-w5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

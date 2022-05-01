@@ -8,11 +8,13 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
-
+    var correctCount = 0
+    @IBOutlet weak var scorelabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        scorelabel.text = "\(correctCount)問正解です！"
     }
     
     @IBAction func toTopScene(_ sender: Any) {
