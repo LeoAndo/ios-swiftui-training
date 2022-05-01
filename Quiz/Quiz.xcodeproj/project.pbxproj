@@ -16,8 +16,6 @@
 		AA4A8720281E82BF000D89C3 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A871F281E82BF000D89C3 /* QuizViewController.swift */; };
 		AA4A8722281E8810000D89C3 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A8721281E8810000D89C3 /* ScoreViewController.swift */; };
 		AA4A8724281E9023000D89C3 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = AA4A8723281E9023000D89C3 /* quiz.csv */; };
-		AA4A8728281ECA0C000D89C3 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4A8726281ECA0C000D89C3 /* correct.png */; };
-		AA4A8729281ECA0C000D89C3 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4A8727281ECA0C000D89C3 /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +30,6 @@
 		AA4A871F281E82BF000D89C3 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		AA4A8721281E8810000D89C3 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		AA4A8723281E9023000D89C3 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
-		AA4A8726281ECA0C000D89C3 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
-		AA4A8727281ECA0C000D89C3 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,22 +68,12 @@
 				AA4A8711281E7D8E000D89C3 /* Main.storyboard */,
 				AA4A8721281E8810000D89C3 /* ScoreViewController.swift */,
 				AA4A871F281E82BF000D89C3 /* QuizViewController.swift */,
-				AA4A8725281ECA0C000D89C3 /* image */,
 				AA4A8723281E9023000D89C3 /* quiz.csv */,
 				AA4A8714281E7D91000D89C3 /* Assets.xcassets */,
 				AA4A8716281E7D91000D89C3 /* LaunchScreen.storyboard */,
 				AA4A8719281E7D91000D89C3 /* Info.plist */,
 			);
 			path = Quiz;
-			sourceTree = "<group>";
-		};
-		AA4A8725281ECA0C000D89C3 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				AA4A8726281ECA0C000D89C3 /* correct.png */,
-				AA4A8727281ECA0C000D89C3 /* incorrect.png */,
-			);
-			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +134,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4A8728281ECA0C000D89C3 /* correct.png in Resources */,
-				AA4A8729281ECA0C000D89C3 /* incorrect.png in Resources */,
 				AA4A8718281E7D91000D89C3 /* LaunchScreen.storyboard in Resources */,
 				AA4A8715281E7D91000D89C3 /* Assets.xcassets in Resources */,
 				AA4A8713281E7D8E000D89C3 /* Main.storyboard in Resources */,
