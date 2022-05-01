@@ -18,6 +18,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     @IBOutlet weak var answerButton4: UIButton!
+    @IBOutlet weak var judgeImageView: UIImageView!
     
     //    画面表示時に呼ばれる
     override func viewDidLoad() {
@@ -42,8 +43,14 @@ class QuizViewController: UIViewController {
         if sender.tag == Int(quizArray[1]) {
             print("正解")
             correctCount += 1
+            judgeImageView.image = UIImage(named: "correct")
         } else {
             print("不正解")
+            judgeImageView.image = UIImage(named: "incorrect")
+        }
+        judgeImageView.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.judgeImageView.isHidden = true
         }
         
         // 次の問題を出す。次の問題がなければ次画面へ遷移する
