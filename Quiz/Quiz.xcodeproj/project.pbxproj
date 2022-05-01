@@ -13,6 +13,8 @@
 		AA4A8713281E7D8E000D89C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4A8711281E7D8E000D89C3 /* Main.storyboard */; };
 		AA4A8715281E7D91000D89C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4A8714281E7D91000D89C3 /* Assets.xcassets */; };
 		AA4A8718281E7D91000D89C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4A8716281E7D91000D89C3 /* LaunchScreen.storyboard */; };
+		AA4A8720281E82BF000D89C3 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A871F281E82BF000D89C3 /* QuizViewController.swift */; };
+		AA4A8722281E8810000D89C3 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4A8721281E8810000D89C3 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AA4A8714281E7D91000D89C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA4A8717281E7D91000D89C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA4A8719281E7D91000D89C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA4A871F281E82BF000D89C3 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		AA4A8721281E8810000D89C3 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AA4A870D281E7D8E000D89C3 /* SceneDelegate.swift */,
 				AA4A870F281E7D8E000D89C3 /* ViewController.swift */,
 				AA4A8711281E7D8E000D89C3 /* Main.storyboard */,
+				AA4A8721281E8810000D89C3 /* ScoreViewController.swift */,
+				AA4A871F281E82BF000D89C3 /* QuizViewController.swift */,
 				AA4A8714281E7D91000D89C3 /* Assets.xcassets */,
 				AA4A8716281E7D91000D89C3 /* LaunchScreen.storyboard */,
 				AA4A8719281E7D91000D89C3 /* Info.plist */,
@@ -140,7 +146,9 @@
 			files = (
 				AA4A8710281E7D8E000D89C3 /* ViewController.swift in Sources */,
 				AA4A870C281E7D8E000D89C3 /* AppDelegate.swift in Sources */,
+				AA4A8722281E8810000D89C3 /* ScoreViewController.swift in Sources */,
 				AA4A870E281E7D8E000D89C3 /* SceneDelegate.swift in Sources */,
+				AA4A8720281E82BF000D89C3 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
