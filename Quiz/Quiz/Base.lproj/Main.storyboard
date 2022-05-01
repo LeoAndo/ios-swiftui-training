@@ -23,6 +23,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="スタート">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hxy-0a-hvL" kind="presentation" id="6OU-Jl-00b"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="クイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0o-83-YSW">
                                 <rect key="frame" x="201" y="69" width="151" height="60"/>
@@ -43,7 +46,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="PuY-kn-FKj">
             <objects>
-                <viewController id="hxy-0a-hvL" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hxy-0a-hvL" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97g-gq-kQ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
