@@ -26,18 +26,35 @@ class QuizViewController: UIViewController {
         csvArray = loadCSV(filename: "quiz")
         csvArray.forEach { word in print(word)}
         
-        quizArray = csvArray[quizCount].components(separatedBy: ",")
+        dispQuizData()
+    }
+    
+    @IBAction func btnAction(sender: UIButton) {
+        print(sender.tag)
+        // 正解判定を行う
+        if sender.tag == Int(quizArray[1]) {
+            print("正解")
+        } else {
+            print("不正解")
+        }
         
+        // 次の問題を出す。次の問題がなければ次画面へ遷移する
+        quizCount += 1
+        if quizCount < csvArray.count {
+            dispQuizData()
+        } else {
+            performSegue(withIdentifier: "toScoreVC", sender: nil)
+        }
+    }
+    
+    func dispQuizData() {
+        quizArray = csvArray[quizCount].components(separatedBy: ",")
         quizNumberLabel.text = "第\(quizCount + 1)問目"
         quizTextView.text = quizArray[0]
         answerButton1.setTitle(quizArray[2], for: .normal)
         answerButton2.setTitle(quizArray[3], for: .normal)
         answerButton3.setTitle(quizArray[4], for: .normal)
         answerButton4.setTitle(quizArray[5], for: .normal)
-    }
-    
-    @IBAction func btnAction(sender: UIButton) {
-        print(sender.tag)
     }
     
     func loadCSV(filename: String) -> [String] {
