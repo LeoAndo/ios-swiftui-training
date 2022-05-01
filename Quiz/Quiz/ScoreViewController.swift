@@ -15,6 +15,11 @@ class ScoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func toTopScene(_ sender: Any) {
+        // 2つ前の画面に戻る
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation
