@@ -17,11 +17,6 @@ class ScoreViewController: UIViewController {
         scorelabel.text = "\(correctCount)問正解です！"
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let scoreVC = segue.destination as! ScoreViewController
-        scoreVC.correctCount = self.correctCount
-    }
-    
     @IBAction func toTopScene(_ sender: Any) {
         // 2つ前の画面に戻る
         self.presentingViewController?.presentingViewController?.dismiss(animated: true)

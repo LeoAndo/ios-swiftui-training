@@ -30,6 +30,12 @@ class QuizViewController: UIViewController {
         dispQuizData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("call prepare")
+        let scoreVC = segue.destination as! ScoreViewController
+        scoreVC.correctCount = self.correctCount
+    }
+    
     @IBAction func btnAction(sender: UIButton) {
         print(sender.tag)
         // 正解判定を行う
