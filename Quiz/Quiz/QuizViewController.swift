@@ -52,7 +52,6 @@ class QuizViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.judgeImageView.isHidden = true
         }
-        
         // 次の問題を出す。次の問題がなければ次画面へ遷移する
         quizCount += 1
         if quizCount < csvArray.count {
