@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  MemoListApp
+//  MemoList
 //
 //  Created by LeoAndo on 2022/05/10.
 //
