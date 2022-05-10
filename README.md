@@ -1,4 +1,4 @@
-# ios-swiftui-training
+# ios-training
 
 # development environment
 
