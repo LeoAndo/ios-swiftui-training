@@ -13,6 +13,9 @@
 		AAAEC4C02840B98A00FADABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAEC4BE2840B98A00FADABE /* Main.storyboard */; };
 		AAAEC4C22840B98C00FADABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAEC4C12840B98C00FADABE /* Assets.xcassets */; };
 		AAAEC4C52840B98C00FADABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAEC4C32840B98C00FADABE /* LaunchScreen.storyboard */; };
+		AAAEC4CD2840DA5700FADABE /* LocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEC4CC2840DA5700FADABE /* LocationDataSource.swift */; };
+		AAAEC4D02840DAD100FADABE /* CLAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEC4CF2840DAD100FADABE /* CLAuthorizationStatus.swift */; };
+		AAAEC4D32840DB6300FADABE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEC4D22840DB6300FADABE /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AAAEC4C12840B98C00FADABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAEC4C42840B98C00FADABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAAEC4C62840B98C00FADABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAEC4CC2840DA5700FADABE /* LocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataSource.swift; sourceTree = "<group>"; };
+		AAAEC4CF2840DAD100FADABE /* CLAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatus.swift; sourceTree = "<group>"; };
+		AAAEC4D22840DB6300FADABE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		AAAEC4B72840B98A00FADABE /* LocationMonitoring */ = {
 			isa = PBXGroup;
 			children = (
+				AAAEC4D12840DB4800FADABE /* ViewModel */,
+				AAAEC4CE2840DA7900FADABE /* Model */,
 				AAAEC4B82840B98A00FADABE /* AppDelegate.swift */,
 				AAAEC4BA2840B98A00FADABE /* SceneDelegate.swift */,
 				AAAEC4BC2840B98A00FADABE /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				AAAEC4C62840B98C00FADABE /* Info.plist */,
 			);
 			path = LocationMonitoring;
+			sourceTree = "<group>";
+		};
+		AAAEC4CE2840DA7900FADABE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEC4CC2840DA5700FADABE /* LocationDataSource.swift */,
+				AAAEC4CF2840DAD100FADABE /* CLAuthorizationStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAAEC4D12840DB4800FADABE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEC4D22840DB6300FADABE /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +166,9 @@
 				AAAEC4BD2840B98A00FADABE /* ViewController.swift in Sources */,
 				AAAEC4B92840B98A00FADABE /* AppDelegate.swift in Sources */,
 				AAAEC4BB2840B98A00FADABE /* SceneDelegate.swift in Sources */,
+				AAAEC4D02840DAD100FADABE /* CLAuthorizationStatus.swift in Sources */,
+				AAAEC4CD2840DA5700FADABE /* LocationDataSource.swift in Sources */,
+				AAAEC4D32840DB6300FADABE /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62SS56G3WJ;
@@ -302,6 +331,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoleo.LocationMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62SS56G3WJ;
@@ -330,6 +361,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoleo.LocationMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
