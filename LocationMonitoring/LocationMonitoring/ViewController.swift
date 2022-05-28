@@ -17,55 +17,47 @@ class ViewController: UIViewController {
     @IBOutlet weak var latitudeLabel: UILabel!
     
     private let model: LocationDataSource = LocationDataSource()
-    var authorizationStatus: CLAuthorizationStatus = .notDetermined
-    var location: CLLocation = .init()
-    
-    var latitude: CLLocationDegrees {
-        location.coordinate.latitude
-    }
-
-    var longitude: CLLocationDegrees {
-        location.coordinate.longitude
-    }
-
-    func requestAuthorization() {
-        model.requestAuthorization()
-    }
-
-    func activate() {
-        // guard !isActive else { return }
-//        model.authorizationPublisher().assign(to: $authorizationStatus)
-//        model.locationPublisher().compactMap { $0.last }.assign(to: $location)
-    }
-
-    func deactivate() {
-        // guard isActive else { return }
-    }
-
-    func startTracking() {
-        model.startTracking()
-    }
-
-    func stopTracking() {
-        model.stopTracking()
-    }
+    private var authorizationStatus: CLAuthorizationStatus = .notDetermined
+    private var location: CLLocation = .init()
+    private var latitude: CLLocationDegrees { location.coordinate.latitude }
+    private var longitude: CLLocationDegrees { location.coordinate.longitude }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         print("Do any additional setup after loading the view.")
+        activate()
     }
     @IBAction func onClickRequestPermissionButton(_ sender: Any) {
-        print("onClickRequestPermissionButton")
-        requestAuthorization()
+        model.requestAuthorization()
     }
     @IBAction func onClickStartLocationButton(_ sender: Any) {
-        print("onClickStartLocationButton")
-        startTracking()
+        model.startTracking()
     }
     @IBAction func onClickStopLocationButton(_ sender: Any) {
-        print("onClickStopLocationButton")
-        stopTracking()
+        model.stopTracking()
+    }
+    
+    private func activate() {
+       model.authorizationPublisher()
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: RunLoop.main) // receiveValueのコードブロックの処理をUIスレッドに変更
+            .sink(receiveCompletion: {
+            print ("authorizationPublisher completion: \($0)")
+        }, receiveValue: { status in
+            self.authorizationStatus = status
+            self.authorizationStatusLabel.text = status.description
+        })
+        
+        model.locationPublisher().compactMap { $0.last }
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: {
+            print ("locationPublisher completion: \($0)")
+        }, receiveValue: { location in
+            self.location = location
+            self.latitudeLabel.text = String(self.latitude)
+            self.longitudeLabel.text = String(self.longitude)
+        })
     }
 }
 
