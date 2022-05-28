@@ -44,10 +44,12 @@ final class LocationDataSource: NSObject {
 
 extension LocationDataSource: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        print("\(manager.authorizationStatus.description)")
         authorizationSubject.send(manager.authorizationStatus)
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("\(locations)")
         locationSubject.send(locations)
     }
 }
