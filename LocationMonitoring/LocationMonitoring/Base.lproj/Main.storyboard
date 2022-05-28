@@ -21,18 +21,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="request Permission"/>
+                                <connections>
+                                    <action selector="onClickRequestPermissionButton:" destination="BYZ-38-t0r" eventType="touchDown" id="Iwm-76-c8z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsY-4P-3I4">
                                 <rect key="frame" x="20" y="170" width="388" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="start Location"/>
+                                <connections>
+                                    <action selector="onClickStartLocationButton:" destination="BYZ-38-t0r" eventType="touchDown" id="55g-WE-s5K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfA-IR-OwJ">
                                 <rect key="frame" x="20" y="238" width="388" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="stop Location"/>
+                                <connections>
+                                    <action selector="onClickStopLocationButton:" destination="BYZ-38-t0r" eventType="touchDown" id="3sC-vl-qVp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Authorization Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXs-5M-pfz">
                                 <rect key="frame" x="20" y="326" width="388" height="21"/>
