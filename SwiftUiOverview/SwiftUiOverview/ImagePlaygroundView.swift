@@ -25,7 +25,9 @@ struct ImagePlaygroundView2: View {
 
 struct ImagePlaygroundView_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePlaygroundView()
-        ImagePlaygroundView2()
+        Group {
+            ImagePlaygroundView()
+            ImagePlaygroundView2()
+        }
     }
 }

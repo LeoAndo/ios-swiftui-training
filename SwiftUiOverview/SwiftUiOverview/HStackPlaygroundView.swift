@@ -36,8 +36,10 @@ struct HStackPlaygroundView2: View {
 
 struct HStackPlaygroundView_Previews: PreviewProvider {
     static var previews: some View {
-        HStackPlaygroundView()
-        HStackPlaygroundView2()
+        Group {
+            HStackPlaygroundView()
+            HStackPlaygroundView2()
+        }
     }
 }
 
