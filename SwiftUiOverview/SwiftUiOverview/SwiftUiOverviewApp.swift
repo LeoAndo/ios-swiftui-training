@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUiOverviewApp: App {
     var body: some Scene {
         WindowGroup {
-            VStackPlaygroundView()
+            ContentView()
         }
     }
 }
