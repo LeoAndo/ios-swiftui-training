@@ -28,7 +28,9 @@ struct TextPlaygroundView2: View {
 
 struct TextPlaygroundView_Previews: PreviewProvider {
     static var previews: some View {
-        TextPlaygroundView()
-        TextPlaygroundView2()
+        Group {
+            TextPlaygroundView()
+            TextPlaygroundView2()
+        }
     }
 }
