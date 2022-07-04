@@ -12,6 +12,7 @@
 		AA6F74AC2872B4E100BA199E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6F74AB2872B4E100BA199E /* Assets.xcassets */; };
 		AA6F74AF2872B4E100BA199E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6F74AE2872B4E100BA199E /* Preview Assets.xcassets */; };
 		AA6F74B62872B7B600BA199E /* TextPlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F74B52872B7B500BA199E /* TextPlaygroundView.swift */; };
+		AA6F74B82872BD4F00BA199E /* ImagePlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F74B72872BD4F00BA199E /* ImagePlaygroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AA6F74AB2872B4E100BA199E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6F74AE2872B4E100BA199E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA6F74B52872B7B500BA199E /* TextPlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPlaygroundView.swift; sourceTree = "<group>"; };
+		AA6F74B72872BD4F00BA199E /* ImagePlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePlaygroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				AA6F74A72872B4DE00BA199E /* SwiftUiOverviewApp.swift */,
 				AA6F74A92872B4DE00BA199E /* ContentView.swift */,
 				AA6F74B52872B7B500BA199E /* TextPlaygroundView.swift */,
+				AA6F74B72872BD4F00BA199E /* ImagePlaygroundView.swift */,
 				AA6F74AB2872B4E100BA199E /* Assets.xcassets */,
 				AA6F74AD2872B4E100BA199E /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				AA6F74B62872B7B600BA199E /* TextPlaygroundView.swift in Sources */,
 				AA6F74AA2872B4DE00BA199E /* ContentView.swift in Sources */,
 				AA6F74A82872B4DE00BA199E /* SwiftUiOverviewApp.swift in Sources */,
+				AA6F74B82872BD4F00BA199E /* ImagePlaygroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
