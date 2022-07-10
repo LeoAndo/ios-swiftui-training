@@ -75,6 +75,22 @@ struct TextPlaygroundView4: View {
     }
 }
 
+struct TextPlaygroundView5: View {
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Text("orange")
+                .foregroundColor(Color.orange)
+            Text("clear")
+                .foregroundColor(.clear)
+            Text("primary")
+                .foregroundColor(.primary)
+            Text("secondary")
+                .foregroundColor(.secondary)
+        }
+    }
+}
+
 struct TextPlaygroundView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -82,6 +98,7 @@ struct TextPlaygroundView_Previews: PreviewProvider {
             TextPlaygroundView2()
             TextPlaygroundView3()
             TextPlaygroundView4()
+            TextPlaygroundView5()
         }
     }
 }
