@@ -56,12 +56,32 @@ struct TextPlaygroundView3: View {
     }
 }
 
+struct TextPlaygroundView4: View {
+
+    var body: some View {
+        VStack(spacing: 32) {
+            Text("1: longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong")
+                .font(.title)
+                .lineLimit(1)
+            
+            Text("2: longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong")
+                .font(.title)
+                .lineLimit(2)
+            
+            Text("3: longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong")
+                .font(.title)
+                .lineLimit(nil)
+        }
+    }
+}
+
 struct TextPlaygroundView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TextPlaygroundView()
             TextPlaygroundView2()
             TextPlaygroundView3()
+            TextPlaygroundView4()
         }
     }
 }
