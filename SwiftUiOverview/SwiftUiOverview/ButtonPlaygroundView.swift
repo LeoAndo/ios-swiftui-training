@@ -41,11 +41,33 @@ struct ButtonPlaygroundView2: View {
     }
 }
 
+struct ButtonPlaygroundView3: View {
+    var body: some View {
+        Button(action: {
+            print("taped button")
+        }, label: {
+            VStack(spacing: 16) {
+                Image(systemName: "camera")
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 40)
+                Text("Select Photo")
+                    .foregroundColor(.black)
+            }.frame(width: 150, height: 100)
+        })
+        .overlay(RoundedRectangle(cornerRadius: 8)
+            .stroke(.black, lineWidth: 4))
+    }
+}
+
 struct ButtonPlaygroundView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonPlaygroundView()
         ButtonPlaygroundView2()
+        ButtonPlaygroundView3()
     }
 }
+
 
 
