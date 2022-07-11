@@ -15,6 +15,7 @@
 		AA6F74B82872BD4F00BA199E /* ImagePlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F74B72872BD4F00BA199E /* ImagePlaygroundView.swift */; };
 		AA6F74BA2872C0CE00BA199E /* HStackPlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F74B92872C0CE00BA199E /* HStackPlaygroundView.swift */; };
 		AA6F74BC2872EA0F00BA199E /* LazyVStackPlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F74BB2872EA0F00BA199E /* LazyVStackPlaygroundView.swift */; };
+		AA837FE2287C1008007334CB /* ButtonPlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA837FE1287C1008007334CB /* ButtonPlaygroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AA6F74B72872BD4F00BA199E /* ImagePlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePlaygroundView.swift; sourceTree = "<group>"; };
 		AA6F74B92872C0CE00BA199E /* HStackPlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackPlaygroundView.swift; sourceTree = "<group>"; };
 		AA6F74BB2872EA0F00BA199E /* LazyVStackPlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackPlaygroundView.swift; sourceTree = "<group>"; };
+		AA837FE1287C1008007334CB /* ButtonPlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPlaygroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				AA6F74A72872B4DE00BA199E /* SwiftUiOverviewApp.swift */,
+				AA837FE1287C1008007334CB /* ButtonPlaygroundView.swift */,
 				AA6F74A92872B4DE00BA199E /* ContentView.swift */,
 				AA6F74B52872B7B500BA199E /* TextPlaygroundView.swift */,
 				AA6F74B72872BD4F00BA199E /* ImagePlaygroundView.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA6F74B62872B7B600BA199E /* TextPlaygroundView.swift in Sources */,
+				AA837FE2287C1008007334CB /* ButtonPlaygroundView.swift in Sources */,
 				AA6F74AA2872B4DE00BA199E /* ContentView.swift in Sources */,
 				AA6F74BA2872C0CE00BA199E /* HStackPlaygroundView.swift in Sources */,
 				AA6F74BC2872EA0F00BA199E /* LazyVStackPlaygroundView.swift in Sources */,
